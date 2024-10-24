@@ -1,0 +1,106 @@
+
+main{
+    margin-top: 70px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 25% 47%;
+    gap: 10px;
+    min-height: 85vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.profile-screenshot,
+.analytics-screenshot,
+.seller-detail {
+    height: 80vh;
+    padding: 20px 10px;
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .5);
+}
+
+.profile-screenshot,
+.analytics-screenshot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.drop-area{
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow:inset 1px 1px 10px rgba(0, 0, 0, .1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.image{
+    width: 50%;
+    padding: 10px;
+}
+.image img{
+    width: 100%;
+}
+.profile-screenshot p,
+.analytics-screenshot p{
+    text-align: center;
+    font-weight: 600;
+    color:rgb(216, 12, 12);
+    margin-top: 50px;
+}
+.js-profile-area{
+    background-position: center;
+    background-size: contain;
+}
+
+.image p{
+    color: #333;
+}
+
+.seller-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#message{
+    width: 100%;
+}
+fieldset{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seller-detail button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    font-size: 19px;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 800px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .seller-detail {
+        width: 197%;
+    }
+}

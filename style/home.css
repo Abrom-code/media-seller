@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    background-color: #b8b4b4;;
+}
+header{
+    padding: 10px 30px 10px;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo-title{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 0;
+}
+.logo-title .logo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;
+}
+.logo-title .title{
+    font-weight: 400;
+    font-size: 22px;
+    font-family:fantasy;
+}
+.title a{
+    text-decoration: none;
+    color: #10b483;
+}
+
+.navigate{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items:end;
+    justify-content: space-evenly;
+    
+}
+
+.navigate a{
+    text-decoration: none;
+    color: rgb(23, 146, 137);
+    font-size: 120%;
+    padding-left: 5%;
+}
+
+.login-signup{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 3%;
+    gap: 10%;
+}
+.login-signup button {
+    cursor: pointer;
+    border: none;
+    min-width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: -4px -4px 10px rgba(0, 0, 0, .2), 6px 4px 10px rgba(0, 0, 0, .2);
+}
+.login-signup button:nth-child(1), button:nth-child(1) a{
+    background-color: #fff;
+    color: #10b483;
+}
+.login-signup button:nth-child(2), button:nth-child(2) a{
+    background-color: green;
+    color: #fff;
+}
+.login-signup a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+main{
+    position: relative;
+    top: 50px;
+    left: 5%;
+    width: 69%;
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 0;
+    z-index: 10;
+}
+
+@media  (max-width: 800px){
+    
+    main h1{
+        font-size: 1rem;
+    }
+}
+main h1{
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 20px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(to right,purple, aliceblue, rgb(140, 255, 24), green, rgb(255, 0, 21));
+    background-clip: text;
+}
+.h1{
+    color: transparent;
+}
+main img{
+    width: 109%;
+    height: 100px;
+    z-index: 0;
+}
+.additional-right iframe{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: -4px -5px 10px rgba(0, 0, 0, .5), 4px 5px 10px rgba(0, 0, 0, .5);;
+}
+
+
+.aditional-left{
+    position: fixed;
+    left: 0;
+    padding: 0 10px 20px;
+    top: 50px;
+    height: 90vh;
+    background: #333;
+    width: 5%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: left1 3s;
+}
+
+.aditional-left p{
+    color: rgb(2, 88, 150);
+    font-size: 1.3rem;
+    margin: 0;
+}
+.aditional-left i{
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 7px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, .2), 4px 4px 10px rgba(255, 255, 255, .2);
+}
+.aditional-left i:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: red;
+}
+.aditional-left i.fa-telegram{
+    color: rgba(26, 160, 227, 0.817);
+}
+.aditional-left i.fa-whatsapp{
+    background-color: #10b483;
+    color: #fff;
+}
+.aditional-left i.fa-facebook{
+    color: rgba(22, 36, 198, 0.783);
+}
+.aditional-left i.fa-tiktok{
+    background-color: #333;
+    color: #fff;
+}
+.aditional-left i.fa-instagram{
+    background: linear-gradient( to bottom, rgb(221, 0, 255), rgba(117, 0, 128, 0.785), rgb(218, 82, 82), rgb(229, 226, 27));
+    color: #fff;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: #fff;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: red;
+}
+
+.additional-right{
+    padding-top: 20px;
+    width: 20%;
+    height: 90vh;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    text-align: center;
+    background-color: #ffffff91;
+    box-shadow: -1px -5px 10px rgba(0, 0, 0, .5);
+}
+.additional-right .text{
+    padding: 10px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+.text p{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(0, 86, 136);
+}
+.additional-right img{
+    min-width: 80px;
+    width: 50%;
+    z-index: 1;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    background: #3c3b3bfe;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+
+
+@media  (max-width: 786px){
+    
+    main h1{
+        font-size: 2rem;
+        top: 30px;
+    }
+    .logo-title .title{
+        display: none;
+    }
+}
+@media (max-width: 920px){
+    .additional-right{
+        display: none;
+}
+
+
+.navigate {
+    display: none; }
+main{
+    width: 87%;
+    }   
+}
+@media (max-width: 600px) {
+    main h1{
+        top: 10px;
+    }
+}
