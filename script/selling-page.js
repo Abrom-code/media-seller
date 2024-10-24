@@ -143,7 +143,7 @@ function postAccount(){
 
                         });
                         localStorage.setItem('accountsInfo', JSON.stringify(accountsInfo));
-                        window.location.href = '../accounts.html'
+                        window.location.href = '../html/accounts.html'
                         
                         return;
                     }
