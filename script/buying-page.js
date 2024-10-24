@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedAccount = JSON.parse(localStorage.getItem('selectedAccount'));
 
 
-
-    if (selectedAccount) {
+    displayAccount();
+   function displayAccount(){
+     if (selectedAccount) {
         container.innerHTML = `
             <div class="profile-screenshot">
                 <div class="profile-pic-area">
@@ -35,13 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
-
-    window.addEventListener('popstate', () => {
-        localStorage.clear('selectedAccount')
-    })
-
-    window.addEventListener("unload", function () {
-        
-        localStorage.clear('selectedAccount');
-    });
+}
 });
+
+

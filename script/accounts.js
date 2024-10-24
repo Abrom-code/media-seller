@@ -37,7 +37,7 @@ document.querySelector('.js-accounts-grid')
             localStorage.setItem('selectedAccount', JSON.stringify(selectedAccount));
             
             
-            window.location.href = './html/buying-page.html';
+            window.location.href = './buying-page.html';
 
             
         });
