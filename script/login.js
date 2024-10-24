@@ -19,7 +19,7 @@ function logIn(){
                 userFround = true;
 
                 if(userPassword === info.password){
-                    window.location.href = 'home.html';
+                    window.location.href = '../index.html';
                     document.querySelector('.js-login-username').value = '';
                     document.querySelector('.js-login-password').value = '';
                     return;

@@ -35,4 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
     }
+
+    window.addEventListener('popstate', () => {
+        localStorage.clear('selectedAccount')
+    })
+
+    window.addEventListener("unload", function () {
+        
+        localStorage.clear('selectedAccount');
+    });
 });

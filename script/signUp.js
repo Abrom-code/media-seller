@@ -48,7 +48,7 @@ function signUp (){
                 document.querySelector('.js-confirm-password').value = '';
 
 
-                window.location.href = '../html/index.html';
+                window.location.href = '../index.html';
 
     
 }
