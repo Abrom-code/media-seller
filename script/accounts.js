@@ -38,5 +38,7 @@ document.querySelector('.js-accounts-grid')
             
             
             window.location.href = '../html/buying-page.html';
+
+            localStorage.clear('selectedAccount')
         });
     });
