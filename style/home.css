@@ -1,0 +1,229 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, rgb(191, 255, 0), rgb(0, 128, 77) ,rgb(50, 205, 192), rgb(88, 142, 107),rgb(30, 128, 0));
+}
+.navigate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+
+}
+
+.navigate a{
+    text-decoration: none;
+    color: #fff;
+}
+main{
+    
+    position: relative;
+    top: 50px;
+    left: 10%;
+    width: 69%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0;
+    z-index: 0;
+}
+
+section{
+    text-align: left;
+}
+
+@media  (max-width: 800px){
+    
+    main h1{
+        font-size: 1rem;
+    }
+}
+main h1{
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    top: 0;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(to right,purple, aliceblue, rgb(140, 255, 24), green, rgb(255, 0, 21));
+    background-clip: text;
+}
+.h1{
+    color: transparent;
+}
+main img{
+    margin-top: 10px;
+    width: 90%;
+    height: 100px;
+    z-index: 0;
+    border-radius: 20px;
+}
+.additional-right iframe{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: -4px -5px 10px rgba(0, 0, 0, .5), 4px 5px 10px rgba(0, 0, 0, .5);;
+}
+
+
+.aditional-left{
+    position: fixed;
+    left: 0;
+    padding: 0 10px 20px;
+    top: 50px;
+    height: 90vh;
+    background: #333;
+    width: 5%;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: left1 3s;
+}
+
+.aditional-left p{
+    color: rgb(2, 88, 150);
+    font-size: 1.3rem;
+    margin: 0;
+}
+.aditional-left i{
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 7px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, .2), 4px 4px 10px rgba(255, 255, 255, .2);
+}
+.aditional-left i:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: red;
+}
+.aditional-left i.fa-telegram{
+    color: rgba(26, 160, 227, 0.817);
+}
+.aditional-left i.fa-whatsapp{
+    background-color: #10b483;
+    color: #fff;
+}
+.aditional-left i.fa-facebook{
+    color: rgba(22, 36, 198, 0.783);
+}
+.aditional-left i.fa-tiktok{
+    background-color: #333;
+    color: #fff;
+}
+.aditional-left i.fa-instagram{
+    background: linear-gradient( to bottom, rgb(221, 0, 255), rgba(117, 0, 128, 0.785), rgb(218, 82, 82), rgb(229, 226, 27));
+    color: #fff;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: #fff;
+}
+.aditional-left i.fa-youtube{
+    font-size: 1.5em;
+    color: red;
+}
+
+.additional-right{
+    padding-top: 20px;
+    width: 20%;
+    height: 90vh;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: -1px -5px 10px rgba(0, 0, 0, .5);
+}
+.additional-right .text{
+    padding: 10px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+.text p{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.text a{
+    text-decoration: none;
+    color: rgb(0, 86, 136);
+}
+.additional-right img{
+    min-width: 80px;
+    width: 50%;
+    z-index: 1;
+}
+
+
+
+
+@media  (max-width: 786px){
+    
+    main h1{
+        font-size: 2rem;
+        
+    }
+    .logo-title .title{
+        display: none;
+    }
+}
+@media (max-width: 920px){
+    .additional-right{
+        display: none;
+}
+
+
+.navigate {
+    display: none; }
+main{
+    width: 87%;
+    }   
+}
+@media (max-width: 600px) {
+    main h1{
+        top: 0;
+    }
+}
+
+
+.motto{
+    text-align: center;
+    padding: 30px;
+    font-family:cursive;
+    color: rgb(42, 30, 210);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
+}
+.hompage-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+.hompage-button  button{
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(165, 165, 165), aliceblue, rgb(232, 227, 227));
+    font-size: 20px;
+    box-shadow: -3px -4px 9px rgba(0, 0, 0, 0.9);
+}
+.hompage-button  a button {
+    text-decoration: none;
+    font-weight: 550;
+    color: black;
+}

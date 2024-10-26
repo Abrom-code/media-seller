@@ -1,0 +1,152 @@
+.main {
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  
+  .accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  @media (max-width: 2000px) {
+    .accounts-grid {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .accounts-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .accounts-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .accounts-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .accounts-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .accounts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .accounts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  .account-container {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  
+    border-right: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid rgb(231, 231, 231);
+    color: #333;
+    font-size: 18px;
+    font-weight: 520;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    min-width: 100px;
+
+    box-shadow: -4px -5px 10px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+  }
+  .account-name{
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 23px;
+  }
+  
+  .account-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .account-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .account-image img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .account-username {
+    height: 40px;
+    margin-bottom: 5px;
+    text-decoration: none;
+  }
+  .account-username a{
+    text-decoration: none;
+  }
+  .account-username a p{
+    color:chocolate;
+    margin-top: 0;
+  }
+  .account-members {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .account-price {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .account-spacer {
+    flex: 1;
+  }
+  
+  
+  .buy-button {
+    width: 100%;
+    padding: 4px;
+    border-radius: 40px;
+    border: none;
+
+    background-color: rgb(128, 210, 14);
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .3);
+
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 20px;
+
+    cursor: pointer;
+  }
+  .buy-button:hover{
+    background-color: rgb(173, 255, 58);
+    transition: .3s;
+    color: #333;
+  }
+  

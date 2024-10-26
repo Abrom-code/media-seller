@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/shared/header.css">
+    <link rel="stylesheet" href="../style/selling-page.css">
+    <title>Sell an account</title>
+</head>
+<body>
+    <header class="top-head">
+        
+        <div class="logo-title">
+            <button class="menu">
+                <div class="menu-icon"></div>
+            </button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./selling-page.html">Selling  accounts</a>
+                    </li>
+                    <li>
+                        <a href="./accounts.html">Buying accounts</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Give feedback</a>
+                    </li>
+                    <li>
+                        <a href="#">Feedbacks</a>
+                    </li>
+                </ul>
+                <div class="copy">&copy;2024 Media Market</div>
+            </nav>
+            
+            
+                <div class="logo"><a href="../home.html"><img src="../image/logo.jpg" alt="logo" width="100px"> </a> </div>
+           
+        </div>
+
+
+        <div class="profile">
+            <a href="">
+                <div class="username"></div>
+                <label class="profile-pic">
+                    <input type="file" accept="image/*" class="profile-picture" hidden>
+                        
+                            <img src="" alt="Profile Picture" width="100px"  class="profileImage">
+                </label> 
+            </a>
+        </div>
+        
+    
+
+</header>
+
+<main>
+    <div class="container">
+            <div class="profile-screenshot">
+                <label for="profile-pic" class="drop-area js-profile-area">
+                    <input type="file" name="" id="profile-pic" accept="image/*"  hidden>
+                    <div class="image js-profile-image">
+                        <img src="../image/upload.png" alt="">
+                        <p>Drag and drop <br> <br>OR <br><br><b>BROWSE</b></p>
+                    </div>
+                    
+                </label>
+                <p class="js-profile-text">Upload profile page screenshot.</p>
+            </div>
+            <div class="analytics-screenshot">
+                <label for="analytics-pic" class="drop-area js-analytics-area">
+                    <input type="file" name="" id="analytics-pic" accept="image/*"  hidden>
+                    <div class="image js-analytics-image">
+                        <img src="../image/upload.png" alt="">
+                        <p>Drag and drop <br> <br>OR <br><br>BROWSE</p>
+                    </div>
+                    
+                </label>
+                <p class="js-analytics-text">Upload analytics page screenshot.</p>
+            </div>
+            <div class="seller-detail">
+                <fieldset>
+                <legend> Seller Information</legend>
+
+                    <form action="">
+                        <label for="username">Username:
+                            <input type="text" name="" id="username">
+                        </label><br>
+
+                        <label for="password">Passowrd : 
+                            <input type="password" name="" id="password">
+                        </label><br>
+                        
+
+                    </form>
+            </fieldset>
+            <fieldset>
+                <legend> Account Information</legend>
+                <label for="acc-type"> Account Type :
+                    <select name="" id="acc-type">
+                        <option value="acc-type">YouTube</option>
+                        <option value="acc-type">Telegram</option>
+                        <option value="acc-type">Instagram</option>
+                        <option value="acc-type">TikTok</option>
+                        <option value="acc-type">LinkedIn</option>
+                        <option value="acc-type">X(Twitter)</option>
+                        <option value="acc-type">WhatsApp</option>
+                    </select>
+                </label>
+                <label for="members">Members : 
+                    <input id="members" type="number" min="1000" value="1000">
+                </label>
+                <label for="content" >Content : 
+                        <select name="" id="content">
+                        <option value="">Entertainment</option>
+                        <option value="">Religious</option>
+                        <option value="">Sport</option>
+                        <option value="">News</option>
+                        <option value="">Crypto</option>
+                        <option value="">Airdrop</option>
+                    </select>
+                    
+                </label>
+                <label for="acc-username">Account Link:
+                    <input type="text" name="" id="acc-username">
+                </label>
+                <label for="price">Price (Birr):
+                    <input type="number" name="" id="price" onkeyup=" 
+                            const inputValue = document.getElementById('price').value;
+                            document.querySelector('.display-price').innerText = `${(Number(inputValue)*0.95).toFixed(0)} Birr`;
+                        ">
+                </label> 
+                <div> Price You Get :
+                    <span class="display-price"></span>
+                </div>
+                <fieldset>
+                    <legend>More About the Account</legend>
+                    <label for="additional-info">
+                        <textarea name="message" id="message" cols="10" 
+                        rows="5" placeholder="Start Writting..."></textarea>
+                    </label>
+                </fieldset>
+            </fieldset>
+
+            <button class="js-post-btn">POST</button>
+        </div>
+    </div>
+</main>
+<script type="module" src="../script/selling-page.js"></script>
+</body>
+</html>
