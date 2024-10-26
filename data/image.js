@@ -9,6 +9,9 @@ export function addAccName (){
         else if(accInfo.accountName === 'Telegram'){
             accInfo.accountImage = '../image/telegram.png'
         } 
+        else if(accInfo.accountName === 'Facebook'){
+            accInfo.accountImage = '../image/facebook.png'
+        } 
         else if(accInfo.accountName === 'TikTok'){
             accInfo.accountImage = '../image/tiktok.png'
         } 
