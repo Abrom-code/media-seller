@@ -12,7 +12,8 @@ export function setProfilePicture(){
         const displayArea = document.querySelector('.profileImage');
 
 
-        displayArea.src = JSON.parse(localStorage.getItem('imgLink')) || '../image/blank-profile-picture-973460_640.png'
+        displayArea.src = JSON.parse(localStorage.getItem('imgLink')) || '../image/blank-profile-picture-973460_640.png' ||
+            './image/blank-profile-picture-973460_640.png'
 
         inputPic.addEventListener('change',  (e) => {
             const inputPicture = inputPic.files[0];
